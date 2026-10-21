@@ -27,6 +27,17 @@ Aplikasi toko daring berbasis PHP dan CodeIgniter 3. Aplikasi ini menyediakan ka
 5. Sesuaikan `$config['base_url']` di `application/config/config.php` dengan alamat dan nama folder project. Nilai bawaan adalah `http://localhost/tokokita_db3/`.
 6. Pastikan Apache dan MySQL berjalan, kemudian buka `http://localhost/tokokita_DB3/`.
 
+## Akses halaman
+
+Dengan konfigurasi bawaan XAMPP di atas (folder project `tokokita_DB3` dan `index.php` tetap aktif), halaman yang tersedia:
+
+- **Halaman utama / katalog:** `http://localhost/tokokita_DB3/`
+- **Login pelanggan:** `http://localhost/tokokita_DB3/index.php/main/login`
+- **Registrasi pelanggan:** `http://localhost/tokokita_DB3/index.php/main/register`
+- **Panel admin:** `http://localhost/tokokita_DB3/index.php/adminpanel`
+
+Pelanggan dapat mendaftar melalui halaman registrasi, lalu login untuk menggunakan keranjang. Dump database menyertakan akun admin contoh dengan username `admin` dan password `12345`; gunakan hanya untuk pengembangan lokal dan segera ganti sebelum aplikasi dipublikasikan. Jika nama folder atau `base_url` berbeda, sesuaikan alamat di atas.
+
 > **Catatan integrasi eksternal:** fitur ongkos kirim memerlukan API RajaOngkir yang aktif. Kredensial API perlu dikelola dan diperbarui sesuai pengaturan akun Anda. Untuk transaksi Midtrans, gunakan server key dan client key dari akun merchant serta mode sandbox saat pengembangan; jangan memasukkan kredensial rahasia ke repository.
 
 ## Struktur utama
