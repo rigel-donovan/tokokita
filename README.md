@@ -36,7 +36,7 @@ Dengan konfigurasi bawaan XAMPP di atas (folder project `tokokita_DB3` dan `inde
 - **Registrasi pelanggan:** `http://localhost/tokokita_DB3/index.php/main/register`
 - **Panel admin:** `http://localhost/tokokita_DB3/index.php/adminpanel`
 
-Pelanggan dapat mendaftar melalui halaman registrasi, lalu login untuk menggunakan keranjang. Dump database menyertakan akun admin contoh dengan username `admin` dan password `12345`; gunakan hanya untuk pengembangan lokal dan segera ganti sebelum aplikasi dipublikasikan. Jika nama folder atau `base_url` berbeda, sesuaikan alamat di atas.
+Pelanggan dapat mendaftar melalui halaman registrasi, lalu login untuk menggunakan keranjang. Login admin pada project ini menggunakan **username**, bukan email: **Username:** `admin`; **Password:** `12345`; **Email:** tidak digunakan untuk login (tabel `tbl_admin` tidak memiliki kolom email). Akun tersebut berasal dari dump database dan hanya untuk pengembangan lokal; segera ganti sebelum aplikasi dipublikasikan. Jika nama folder atau `base_url` berbeda, sesuaikan alamat di atas.
 
 > **Catatan integrasi eksternal:** fitur ongkos kirim memerlukan API RajaOngkir yang aktif. Kredensial API perlu dikelola dan diperbarui sesuai pengaturan akun Anda. Untuk transaksi Midtrans, gunakan server key dan client key dari akun merchant serta mode sandbox saat pengembangan; jangan memasukkan kredensial rahasia ke repository.
 
